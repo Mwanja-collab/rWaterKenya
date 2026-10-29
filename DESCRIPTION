@@ -1,0 +1,23 @@
+Package: rWaterKenya
+Type: Package
+Title: Kenya Water Service Providers Performance Dataset
+Version: 0.1.0
+Authors@R: 
+    person(
+      "Calistus Mwanja",
+      "Nyongesa",
+      email = "mwanjacally001@gmail.com",
+      role = c("aut", "cre")
+    )
+Description: Provides the Kenya Water Service Providers Performance
+    Dataset for the 2024/2025 reporting period. Supports statistical
+    analysis of water service provider performance and water service
+    delivery in Kenya.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 3.5)
+URL: https://github.com/Mwanja-collab/rWaterKenya
+BugReports: https://github.com/Mwanja-collab/rWaterKenya/issues
+Config/roxygen2/version: 8.1.1
