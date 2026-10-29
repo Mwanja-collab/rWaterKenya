@@ -5,26 +5,50 @@
 \alias{water_data}
 \title{Kenya Water Service Providers Performance Dataset}
 \format{
-A data frame containing performance indicators for water
-service providers. Use names(water_data) to view the variables and
-str(water_data) to inspect their data types.
+A data frame with 94 observations and 15 variables:
+\describe{
+  \item{utility}{Name of the water service provider or utility.}
+  \item{population_service_area}{Population within the provider's
+  service area.}
+  \item{population_served}{Population served by the provider.}
+  \item{total_connections}{Total number of water connections.}
+  \item{active_connections}{Number of active water connections.}
+  \item{towns_served}{Number of towns served by the provider.}
+  \item{turnover_ksh_million}{Provider turnover in millions of
+  Kenyan shillings.}
+  \item{water_produced_000_m3}{Volume of water produced, in
+  thousands of cubic metres.}
+  \item{domestic_kiosks_billed_000_m3}{Volume billed through
+  domestic kiosks, in thousands of cubic metres.}
+  \item{total_billed_volume_000_m3}{Total billed water volume,
+  in thousands of cubic metres.}
+  \item{non_revenue_water_pct}{Percentage of water produced that
+  does not generate billed revenue, as reported in the dataset.}
+  \item{production_per_capita_lcd}{Water production per capita
+  per day, in litres per capita per day.}
+  \item{consumption_per_capita_lcd}{Water consumption per capita
+  per day, in litres per capita per day.}
+  \item{total_staff}{Total number of staff employed by the provider.}
+  \item{compliance}{Reported compliance indicator or status.}
+}
 }
 \source{
-See the dataset repository and original data provider for
-source attribution and reuse permissions:
-https://github.com/Mwanja-collab/Kenya-Water-Performance
+Dataset repository:
+\url{https://github.com/Mwanja-collab/Kenya-Water-Performance}
 }
 \usage{
 water_data
 }
 \description{
 Performance data for water service providers in Kenya for the
-2024/2025 reporting period. The dataset is intended for statistical
-analysis of water service delivery and provider performance.
+2024/2025 reporting period. The dataset supports statistical
+analysis of water service delivery, provider performance,
+infrastructure, financial performance, and operational efficiency.
 }
 \examples{
 data(water_data)
 head(water_data)
 names(water_data)
+str(water_data)
 }
 \keyword{datasets}
