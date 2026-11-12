@@ -1,0 +1,46 @@
+#' Kenya Water Service Providers Panel Dataset (2023/2024–2024/2025)
+#'
+#' A panel dataset containing performance indicators for 92 matched
+#' Water Service Providers (WSPs) in Kenya across two financial years:
+#' 2023/2024 and 2024/2025.
+#'
+#' The dataset was compiled from the WASREB IMPACT Report 17
+#' (2023/2024) and IMPACT Report 18 (2024/2025).
+#'
+#' @format A data frame with 184 rows and 18 variables:
+#' \describe{
+#'   \item{provider_id}{Unique numerical identifier for each provider.}
+#'   \item{utility}{Name of the Water Service Provider.}
+#'   \item{year}{Financial reporting year.}
+#'   \item{population_service_area}{Population within the service area.}
+#'   \item{population_served}{Population served by the provider.}
+#'   \item{total_connections}{Total water connections.}
+#'   \item{active_connections}{Number of active water connections.}
+#'   \item{towns_served}{Number of towns served.}
+#'   \item{turnover_ksh_million}{Annual turnover in KSh millions.}
+#'   \item{water_produced_000_m3}{Water produced in thousands of cubic metres.}
+#'   \item{domestic_kiosks_industrial_billed_000_m3}{2023/2024 domestic, kiosk and industrial billed volume in thousands of cubic metres.}
+#'   \item{total_billed_volume_000_m3}{Total billed water volume in thousands of cubic metres.}
+#'   \item{non_revenue_water_pct}{Non-revenue water as a percentage.}
+#'   \item{production_per_capita_lcd}{Production per capita in litres per capita per day.}
+#'   \item{consumption_per_capita_lcd}{Consumption per capita in litres per capita per day.}
+#'   \item{total_staff}{Total number of staff.}
+#'   \item{compliance}{Regulatory compliance classification.}
+#'   \item{domestic_kiosks_billed_000_m3}{2024/2025 domestic and kiosk billed volume in thousands of cubic metres.}
+#' }
+#'
+#' @source Water Services Regulatory Board (WASREB), IMPACT Report 17
+#' (2023/2024) and IMPACT Report 18 (2024/2025).
+#'
+#' @details The dataset includes 92 providers observed in both financial
+#' years. Missing values are retained where information was unavailable.
+#' The two billed-volume variables are kept separate because their
+#' definitions have not been established as equivalent across reports.
+#'
+#' @usage data(water_panel_data)
+#'
+#' @examples
+#' data(water_panel_data)
+#' head(water_panel_data)
+#'
+"water_panel_data"
